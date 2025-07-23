@@ -1,7 +1,14 @@
 [project]
-name = "python-project-50"
+name = "hexlet-code"
 version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = []
+
+
+[project.scripts]
+gendiff = "hexlet_code.scripts.gendiff:main"
+
+[tool.uv]
+package = true
