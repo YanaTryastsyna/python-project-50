@@ -1,2 +1,2 @@
 lint:
-	flake8 .
+	.venv/bin/ruff check .
