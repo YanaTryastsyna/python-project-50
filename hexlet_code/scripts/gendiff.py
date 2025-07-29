@@ -12,7 +12,7 @@ def main():
         "-f", "--format",
         help="set format of output")
     
-    args = parser.parse_args()
+    parser.parse_args()
 
 
     diff = generate_diff(args.first_file, args.second_file)
