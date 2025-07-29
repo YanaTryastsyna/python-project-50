@@ -1,5 +1,5 @@
 import argparse
-from hexlet_code. gendiff import generate_diff
+from hexlet_code.gendiff import generate_diff
 
 def main():
     parser = argparse.ArgumentParser(
@@ -7,18 +7,16 @@ def main():
     )
     parser.add_argument("first_file")
     parser.add_argument("second_file")
-    
     parser.add_argument(
         "-f", "--format",
-        help="set format of output")
+        help="set format of output"
+    )
     
-    parser.parse_args()
-
+    args = parser.parse_args()  # Сохраняем результат парсинга в args!
 
     diff = generate_diff(args.first_file, args.second_file)
     print(diff)
 
 if __name__ == "__main__":
     main()
-
 
