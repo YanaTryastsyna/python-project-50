@@ -10,6 +10,7 @@ dependencies = []
 [project.scripts]
 gendiff = "hexlet_code.scripts.gendiff:main"
 
+
 [tool.uv]
 package = true
 
