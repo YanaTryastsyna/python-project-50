@@ -2,14 +2,11 @@
 from hexlet_code.file_reader import read_file
 
 def generate_diff(file_path1, file_path2):
-    # Читаем и парсим два файла
     data1 = read_file(file_path1)
     data2 = read_file(file_path2)
 
-    # Собираем все ключи (объединение множеств)
     keys = sorted(set(data1.keys()) | set(data2.keys()))
-
-    result = ["{"]  # начинаем формировать строку результата
+    result = ["{"]
 
     for key in keys:
         if key in data1 and key not in data2:
