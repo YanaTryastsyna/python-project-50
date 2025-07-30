@@ -17,3 +17,6 @@ package = true
 [tool.ruff]
 exclude = ["build"]
 
+[tool.hatch.build.targets.wheel]
+packages = ["hexlet_code"]
+

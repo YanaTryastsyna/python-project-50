@@ -10,3 +10,4 @@ hexlet_code.egg-info/entry_points.txt
 hexlet_code.egg-info/top_level.txt
 hexlet_code/scripts/__init__.py
 hexlet_code/scripts/gendiff.py
+tests/test_flat_diff.py
