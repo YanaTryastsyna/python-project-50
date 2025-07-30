@@ -24,8 +24,7 @@ jobs:
           pip install ruff pytest coverage
 
       - name: Lint with Ruff
-        run: |
-          ruff hexlet_code tests
+        run: ruff hexlet_code tests
 
       - name: Run tests and collect coverage
         run: |
@@ -36,8 +35,8 @@ jobs:
         uses: SonarSource/sonarcloud-github-action@v2
         with:
           args: >
-            -Dsonar.projectKey=your-github-username_python-project-50
-            -Dsonar.organization=your-github-username
+            -Dsonar.projectKey=a1_python-project-50
+            -Dsonar.organization=a1
             -Dsonar.python.coverage.reportPaths=coverage.xml
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
