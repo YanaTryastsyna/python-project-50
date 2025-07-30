@@ -1,0 +1,28 @@
+# Python compiled files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Build directories
+build/
+dist/
+*.egg-info/
+
+# Virtual environments (если есть)
+venv/
+.env/
+.env.*
+
+# Poetry lock files
+poetry.lock
+
+# Логи и временные файлы
+*.log
+*.tmp
+
+# MacOS системные файлы
+.DS_Store
+
+# uv.lock — если временный lock-файл
+uv.lock
+*.lock
