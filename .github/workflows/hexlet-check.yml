@@ -26,8 +26,7 @@ jobs:
           pip install ruff pytest coverage
 
       - name: Run linter (ruff)
-        run: |
-          ruff hexlet_code tests
+        run: ruff check hexlet_code tests
 
       - name: Run tests and collect coverage
         run: |
