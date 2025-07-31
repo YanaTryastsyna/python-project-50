@@ -31,6 +31,8 @@ jobs:
           coverage run -m pytest
           coverage xml
 
+      - run: ls -l
+
       - name: SonarCloud Scan
         uses: SonarSource/sonarcloud-github-action@v2
         with:
