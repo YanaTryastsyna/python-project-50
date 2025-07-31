@@ -1,5 +1,6 @@
 import os
-from hexlet_code.gendiff import generate_diff
+from gendiff import generate_diff
+
 
 
 def test_flat_diff():
