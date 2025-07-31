@@ -32,7 +32,6 @@ jobs:
           coverage xml
 
       - name: SonarCloud Scan
-        uses: SonarSource/sonarcloud-github-action@v2
         with:
           args: >
             -Dsonar.projectKey=YanaTryastsyna_python-project-50
