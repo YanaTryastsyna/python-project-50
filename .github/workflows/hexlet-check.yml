@@ -24,7 +24,7 @@ jobs:
           pip install ruff pytest coverage
 
       - name: Lint with Ruff
-        run: ruff check hexlet_code tests
+        run: ruff check gendiff tests
 
       - name: Run tests and collect coverage
         run: |
