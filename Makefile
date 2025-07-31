@@ -1,2 +1,2 @@
 lint:
-	.venv/bin/ruff check .
+	ruff check .
