@@ -31,4 +31,14 @@ jobs:
           coverage run -m pytest
           coverage xml
 
+      - name: SonarCloud Scan
+        uses: SonarSource/sonarcloud-github-action@v2
+        with:
+          args: >
+            -Dsonar.projectKey=python-project-50
+            -Dsonar.organization=YanaTryastsyna
+            -Dsonar.python.coverage.reportPaths=coverage.xml
+        env:
+          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+
    
