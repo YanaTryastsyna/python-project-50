@@ -1,5 +1,5 @@
-
 from gendiff.file_reader import read_file
+
 
 def generate_diff(file_path1, file_path2):
     data1 = read_file(file_path1)
@@ -17,11 +17,12 @@ def generate_diff(file_path1, file_path2):
             result.append(f"  - {key}: {data1[key]}")
             result.append(f"  + {key}: {data2[key]}")
         else:
-            result.append(f"    {key}: {data1[key]}")
+            result.append(f"    {key}: {data1[key]}")  # 4 пробела  # 4 пробела для неизменных ключей
 
     result.append("}")
     return "\n".join(result)
-    
+
+
 
 
 
