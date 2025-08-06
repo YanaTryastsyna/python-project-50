@@ -17,7 +17,7 @@ def generate_diff(file_path1, file_path2):
             result.append(f"  - {key}: {data1[key]}")
             result.append(f"  + {key}: {data2[key]}")
         else:
-            result.append(f"    {key}: {data1[key]}")  # 4 пробела  # 4 пробела для неизменных ключей
+            result.append(f"    {key}: {data1[key]}")  
 
     result.append("}")
     return "\n".join(result)
