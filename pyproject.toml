@@ -16,11 +16,5 @@ build-backend = "hatchling.build"
 [tool.hatch.build.targets.wheel]
 packages = ["gendiff"]
 
-
-[tool.uv.dependency-groups.dev]
-dependencies = [
-    "pytest",
-    "pytest-cov",
-    "coverage",
-    "ruff"
-]
+[tool.uv]
+dev-dependencies = ["pytest", "pytest-cov", "coverage", "ruff"]
