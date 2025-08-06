@@ -1,5 +1,10 @@
 from gendiff.file_reader import read_file
 
+def format_value(value):
+    if isinstance(value, bool):
+        return str(value).lower()
+    return value
+    
 
 def generate_diff(file_path1, file_path2):
     data1 = read_file(file_path1)
