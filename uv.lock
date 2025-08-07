@@ -80,10 +80,13 @@ name = "gendiff"
 version = "0.1.0"
 source = { editable = "." }
 dependencies = [
+    { name = "coverage" },
+    { name = "pytest" },
     { name = "pyyaml" },
+    { name = "ruff" },
 ]
 
-[package.dev-dependencies]
+[package.optional-dependencies]
 dev = [
     { name = "coverage" },
     { name = "pytest" },
@@ -92,15 +95,17 @@ dev = [
 ]
 
 [package.metadata]
-requires-dist = [{ name = "pyyaml" }]
-
-[package.metadata.requires-dev]
-dev = [
+requires-dist = [
     { name = "coverage" },
+    { name = "coverage", marker = "extra == 'dev'" },
     { name = "pytest" },
-    { name = "pytest-cov" },
+    { name = "pytest", marker = "extra == 'dev'" },
+    { name = "pytest-cov", marker = "extra == 'dev'" },
+    { name = "pyyaml" },
     { name = "ruff" },
+    { name = "ruff", marker = "extra == 'dev'" },
 ]
+provides-extras = ["dev"]
 
 [[package]]
 name = "iniconfig"
