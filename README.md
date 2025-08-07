@@ -8,8 +8,11 @@
 [![Coverage](https://sonarcloud.io/api/project_badges/measure?project=YanaTryastsyna_python-project-50&metric=coverage)](https://sonarcloud.io/summary/new_code?id=YanaTryastsyna_python-project-50)
 
 
-## Пример использования
+## Пример использования .json файлов
 [![asciicast](https://asciinema.org/a/ryBs0phVPHxiW6wbsyCrdN4UU.svg)](https://asciinema.org/a/ryBs0phVPHxiW6wbsyCrdN4UU)
+
+## Пример использования .yml файлов
+[![asciicast](https://asciinema.org/a/vj0v9h3H8gJJyhsx7scYJX1n9.svg)](https://asciinema.org/a/vj0v9h3H8gJJyhsx7scYJX1n9)
 
 
 
