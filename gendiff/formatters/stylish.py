@@ -16,6 +16,7 @@ def format_value(value, depth):
 def format_stylish(diff, depth=1):
     lines = []
     indent = ' ' * (depth * 4 - 2)
+    closing_indent = ' ' * ((depth - 1) * 4)
 
     for item in diff:
         key = item['key']
@@ -39,4 +40,4 @@ def format_stylish(diff, depth=1):
             lines.append(f"{indent}- {key}: {val1}")
             lines.append(f"{indent}+ {key}: {val2}")
 
-    return "{\n" + "\n".join(lines) + "\n" + (' ' * ((depth - 1) * 4)) + "}"
+    return "{\n" + "\n".join(lines) + "\n" + closing_indent + "}"

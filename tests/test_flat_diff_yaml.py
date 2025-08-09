@@ -1,6 +1,5 @@
 from gendiff import generate_diff
 
-
 def test_flat_diff_yaml():
     file1 = 'tests/test_data/file1.yml'
     file2 = 'tests/test_data/file2.yml'
@@ -16,3 +15,4 @@ def test_flat_diff_yaml():
 
     result = generate_diff(file1, file2)
     assert result.strip() == expected.strip()
+

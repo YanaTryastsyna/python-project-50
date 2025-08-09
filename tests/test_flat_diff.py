@@ -1,6 +1,5 @@
 from gendiff import generate_diff
 
-
 def test_flat_diff():
     file1 = 'tests/test_data/file1.json'
     file2 = 'tests/test_data/file2.json'

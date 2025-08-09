@@ -1,13 +1,12 @@
 from gendiff import generate_diff
 
-def test_diff_nested_json():
+def test_nested_diff():
     file1 = 'tests/test_data/file_nested1.json'
     file2 = 'tests/test_data/file_nested2.json'
-    expected_file = 'tests/test_data/expected_stylish.txt'  
 
-    with open(expected_file) as f:
+    with open('tests/test_data/expected_stylish.txt') as f:
         expected = f.read()
 
-    result = generate_diff(file1, file2, format_name='stylish')
+    result = generate_diff(file1, file2)
     assert result.strip() == expected.strip()
 
