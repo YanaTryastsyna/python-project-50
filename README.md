@@ -14,8 +14,11 @@
 ## Пример использования .yml файлов
 [![asciicast](https://asciinema.org/a/vj0v9h3H8gJJyhsx7scYJX1n9.svg)](https://asciinema.org/a/vj0v9h3H8gJJyhsx7scYJX1n9)
 
-## Пример сравнение вложенных структур данных
+## Пример сравнения вложенных структур данных
 [![asciicast](https://asciinema.org/a/j3t1f2BGYzhnzYg1QJuOiNG5H.svg)](https://asciinema.org/a/j3t1f2BGYzhnzYg1QJuOiNG5H)
+
+## Пример сравнения вложенных структур данных в плоском формате
+[![asciicast](https://asciinema.org/a/FJ7Auy3wyFPzTvxZ3Do6OfcfR.svg)](https://asciinema.org/a/FJ7Auy3wyFPzTvxZ3Do6OfcfR)
 
 
 
