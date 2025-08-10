@@ -20,6 +20,8 @@
 ## Пример сравнения вложенных структур данных в плоском формате
 [![asciicast](https://asciinema.org/a/FJ7Auy3wyFPzTvxZ3Do6OfcfR.svg)](https://asciinema.org/a/FJ7Auy3wyFPzTvxZ3Do6OfcfR)
 
+## Пример вывода в json. формате
+[![asciicast](https://asciinema.org/a/dwzxH5jw5Ha2VEhEKTBC4r1iO.svg)](https://asciinema.org/a/dwzxH5jw5Ha2VEhEKTBC4r1iO)
 
 
 
