@@ -1,0 +1,18 @@
+version: "3.8"
+
+services:
+  app:
+    image: python:3.13
+    volumes:
+      - ./:/project
+    working_dir: /project
+    environment:
+      - PYTHONPATH=/project/code
+    command: >
+      bash -c "
+      pip install --upgrade pip &&
+      pip install hatch pytest PyYAML coverage ruff &&
+      hatch build &&
+      pip install dist/hexlet_code-0.1.0-py3-none-any.whl &&
+      pytest -v tests
+      "
