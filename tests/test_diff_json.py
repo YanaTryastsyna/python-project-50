@@ -1,6 +1,6 @@
 import os
 import json
-from gendiff.gendiff import generate_diff
+from gendiff import generate_diff
 
 def test_diff_json_format():
     base_dir = os.path.dirname(__file__)
@@ -11,4 +11,3 @@ def test_diff_json_format():
     parsed = json.loads(result)
     assert isinstance(parsed, list)
     assert all(isinstance(item, dict) for item in parsed)
-  

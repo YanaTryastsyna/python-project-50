@@ -1,5 +1,5 @@
 import os
-from gendiff.gendiff import generate_diff
+from gendiff import generate_diff
 
 def test_flat_diff():
     base_dir = os.path.dirname(__file__)

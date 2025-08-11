@@ -1,5 +1,5 @@
 lint:
-	uv run ruff check --fix code tests
+	uv run ruff check --fix gendiff tests
 
 diff:
 	python3 -m gendiff.scripts.gendiff tests/test_data/file1.json tests/test_data/file2.json
@@ -14,6 +14,6 @@ test-coverage:
 	uv run pytest --cov=gendiff --cov-report=xml:coverage.xml
 
 check: 
-	test lint
+	make lint
 
 .PHONY: install test lint check test-coverage diff
