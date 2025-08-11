@@ -9,6 +9,7 @@ def to_str(value):
         return str(value).lower()
     else:
         return str(value)
+    
 
 def format_plain(diff, path=""):
     lines = []
