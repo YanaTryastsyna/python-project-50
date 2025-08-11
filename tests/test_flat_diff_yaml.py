@@ -11,4 +11,4 @@ def test_flat_diff_yaml():
     assert result.strip() == expected.strip()
 
 
-  
+

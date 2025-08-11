@@ -8,4 +8,4 @@ def test_flat_diff():
         expected = f.read()
 
     result = generate_diff(file1, file2)
-    assert result.strip() == expected.strip()    
+    assert result.strip() == expected.strip()

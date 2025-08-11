@@ -21,13 +21,18 @@ def format_plain(diff, path=""):
             lines.append(format_plain(item['children'], f"{property_path}."))
         elif status == 'added':
             value = to_str(item['value'])
-            lines.append(f"Property '{property_path}' was added with value: {value}")
+            lines.append(
+                f"Property '{property_path}' was added with value: {value}"
+            )
         elif status == 'removed':
             lines.append(f"Property '{property_path}' was removed")
         elif status == 'changed':
             value1 = to_str(item['value1'])
             value2 = to_str(item['value2'])
-            lines.append(f"Property '{property_path}' was updated. From {value1} to {value2}")
+            lines.append(
+                f"Property '{property_path}' was updated. "
+                f"From {value1} to {value2}"
+            )
     return "\n".join(lines)
 
 
