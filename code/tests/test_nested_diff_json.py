@@ -1,5 +1,5 @@
 import os
-from gendiff import generate_diff
+from gendiff.gendiff import generate_diff
 
 def test_nested_diff():
     base_dir = os.path.dirname(__file__)
