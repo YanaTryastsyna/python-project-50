@@ -2,6 +2,7 @@ import json
 import yaml
 import os
 
+
 def read_file(path):
     _, ext = os.path.splitext(path)
     with open(path) as f:
