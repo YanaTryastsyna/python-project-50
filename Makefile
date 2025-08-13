@@ -8,7 +8,7 @@ install:
 	uv sync
 
 test:
-	uv run pytest
+	uv run pytest -v
 
 test-coverage:
 	uv run pytest --cov=gendiff --cov-report=xml:coverage.xml
