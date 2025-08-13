@@ -36,21 +36,21 @@
 - **GitHub Actions** — CI/CD
 - **SonarCloud** — анализ качества кода
 
----
-
 ## 📦 Установка
 ```bash
 git clone https://github.com/YanaTryastsyna/python-project-50.git
 cd python-project-50
 make install
+``` 
 
 ## ▶️ Запуск
 gendiff file1.json file2.json
 gendiff file1.yml file2.yml --format plain
 gendiff file1.json file2.json --format json
 
-🧪 Тестирование
+## 🧪 Тестирование
 make test
+
 
 ## Примеры работы
 JSON-файлы:
@@ -68,7 +68,7 @@ YAML-файлы:
 Формат JSON:
 [![asciicast](https://asciinema.org/a/dwzxH5jw5Ha2VEhEKTBC4r1iO.svg)](https://asciinema.org/a/dwzxH5jw5Ha2VEhEKTBC4r1iO)
 
-📂 Структура проекта
+## 📂 Структура проекта
 gendiff/          # Исходный код
 gendiff/formatters # Форматеры (stylish, plain, json)
 gendiff/scripts   # CLI
@@ -76,5 +76,10 @@ tests/            # Тесты
 Makefile          # Автоматизация
 pyproject.toml    # Конфигурация проекта
 ruff.toml         # Настройки линтера
+
+## 👤 Автор
+Яна Трястына
+📧 Email: yana.tryastsyna@mail.ru
+🔗 GitHub: YanaTryastsyna
 
 
