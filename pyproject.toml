@@ -5,7 +5,7 @@ description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
-    "PyYAML"
+    "pyyaml>=6.0",
 ]
 
 [project.scripts]
