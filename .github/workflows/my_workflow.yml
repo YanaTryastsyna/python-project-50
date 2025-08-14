@@ -31,7 +31,7 @@ jobs:
         with:
           args: >
             -Dsonar.projectKey=YanaTryastsyna_python-project-50
-            -Dsonar.organization=YanaTryastsyna
+            -Dsonar.organization=yanatryastsyna
             -Dsonar.python.coverage.reportPaths=coverage.xml
             -Dsonar.coverage.exclusions=tests/**
             -Dsonar.exclusions=tests/**
