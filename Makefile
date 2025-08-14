@@ -1,20 +1,30 @@
-PYTHON = python
-
-lint:
-	$(PYTHON) -m ruff check .
-
-diff:
-	$(PYTHON) -m gendiff.scripts.gendiff tests/test_data/file1.json tests/test_data/file2.json
-
 install:
 	uv sync
 
+run:
+	uv run gendiff
+
 test:
-	$(PYTHON) -m pytest -v
+	uv run pytest
 
 test-coverage:
-	$(PYTHON) -m pytest --cov=gendiff --cov-report=xml:coverage.xml
+	uv run pytest --cov=gendiff --cov-report=xml:coverage.xml
 
-check: lint
+lint:
+	uv run ruff check gendiff
 
-.PHONY: install test lint check test-coverage diff
+check: test lint
+
+build:
+	uv build
+
+package-install:
+	uv tool install dist/*.whl
+
+reinstall:
+	uv tool install --force dist/*.whl
+
+uninstall:
+	uv tool uninstall hexlet-code
+
+.PHONY: install test lint selfcheck check build package-install reinstall uninstall
