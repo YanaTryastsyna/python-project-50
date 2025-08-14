@@ -1,16 +1,16 @@
 lint:
-	uv run ruff check .
+	python -m ruff check .
 diff:
-	python3 -m gendiff.scripts.gendiff tests/test_data/file1.json tests/test_data/file2.json
+	python -m gendiff.scripts.gendiff tests/test_data/file1.json tests/test_data/file2.json
 
 install:
 	uv sync
 
 test:
-	uv run pytest -v
+	python -m pytest -v
 
 test-coverage:
-	uv run pytest --cov=gendiff --cov-report=xml:coverage.xml
+	python -m pytest --cov=gendiff --cov-report=xml:coverage.xml
 
 check: 
 	make lint
