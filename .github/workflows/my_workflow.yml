@@ -27,7 +27,7 @@ jobs:
           make test-coverage
           python -m coverage report
       - name: SonarQube Scan
-        if: github.ref == 'refs/heads/main'  # Запускать только для main ветки
+        if: github.ref == 'refs/heads/main' 
         uses: SonarSource/sonarqube-scan-action@v5
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
