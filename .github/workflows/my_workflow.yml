@@ -15,7 +15,7 @@ jobs:
           python-version: '3.12'
       - name: Install dependencies
         run: |
-          pip install uv
+          pip install uv ruff  # Добавлено ruff здесь
           make install
       - name: Run linter and pytest
         run: |
@@ -23,7 +23,6 @@ jobs:
       - name: Run test coverage
         run: |
           make test-coverage
-
       - name: SonarQubeScan
         uses: SonarSource/sonarqube-scan-action@v5
         env:
